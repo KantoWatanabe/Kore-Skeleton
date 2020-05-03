@@ -1,0 +1,16 @@
+{
+    "name": "kantowatanabe/korelibrary-sample",
+    "description": "korelibrary sample.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kanto Watanabe",
+            "email": "watanabe.kanto@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "kantowatanabe/korelibrary": "dev-master"
+    }
+}
