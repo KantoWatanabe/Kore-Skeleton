@@ -9,8 +9,7 @@
             "email": "watanabe.kanto@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "kantowatanabe/korelibrary": "dev-master"
+        "kantowatanabe/korelibrary": "1.0.0"
     }
 }
