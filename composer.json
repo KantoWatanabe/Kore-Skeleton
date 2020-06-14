@@ -10,6 +10,6 @@
         }
     ],
     "require": {
-        "kantowatanabe/korelibrary": "1.2.0"
+        "kantowatanabe/korelibrary": "1.3.0"
     }
 }
