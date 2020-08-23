@@ -1,13 +1,9 @@
 <?php
 use Kore\Config;
 
-// define
-define('ROOT_DIR', __DIR__.'/../../');
-define('APP_DIR', ROOT_DIR.'app/');
-define('APP_NS', 'app\\');
+require_once(__DIR__.'/../../vendor/autoload.php');
 
-// Composer
-require_once(ROOT_DIR.'vendor/autoload.php');
+Kore\bootstrap(__DIR__.'/../../app', 'app');
 
 // AutoLoad
 spl_autoload_register(function ($class) {
