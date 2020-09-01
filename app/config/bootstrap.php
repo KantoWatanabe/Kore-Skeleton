@@ -24,7 +24,7 @@ spl_autoload_register(function ($class) {
     }
 });
 
-// Regiser Config
+// Register Config
 $env = @$_SERVER['app_env'];
 if (php_sapi_name() === 'cli') {
     foreach ($argv as $key => $value) {
