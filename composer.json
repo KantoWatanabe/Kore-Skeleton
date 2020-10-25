@@ -1,6 +1,6 @@
 {
-    "name": "kantowatanabe/korelibrary-sample",
-    "description": "korelibrary sample.",
+    "name": "korephp/kore-skeleton",
+    "description": "korelibrary skeleton.",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -10,6 +10,6 @@
         }
     ],
     "require": {
-        "kantowatanabe/korelibrary": "^1.8"
+        "korephp/kore": "^1.8"
     }
 }
