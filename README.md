@@ -1,5 +1,5 @@
-# KoreLibrary-Skeleton
-korelibrary skeleton.
+# Kore-Skeleton
+A skeleton for creating applications with [Kore](https://github.com/KantoWatanabe/Kore).
 
 ## Installation
 ```bash
