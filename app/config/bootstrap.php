@@ -3,7 +3,19 @@ use Kore\Config;
 
 require_once(__DIR__.'/../../vendor/autoload.php');
 
+// Init Kore
 Kore\bootstrap(__DIR__.'/../../app', 'app');
+
+$env = @$_SERVER['app_env'];
+if (php_sapi_name() === 'cli') {
+    foreach ($argv as $key => $value) {
+        if (preg_match('/^--env=[a-zA-Z0-9]+$/', $value)) {
+            $env = str_replace('--env=', '', $value);
+            break;
+        }
+    }
+}
+Config::create($env);
 
 // AutoLoad
 spl_autoload_register(function ($class) {
@@ -23,18 +35,6 @@ spl_autoload_register(function ($class) {
         require $file;
     }
 });
-
-// Register Config
-$env = @$_SERVER['app_env'];
-if (php_sapi_name() === 'cli') {
-    foreach ($argv as $key => $value) {
-        if (preg_match('/^--env=[a-zA-Z0-9]+$/', $value)) {
-            $env = str_replace('--env=', '', $value);
-            break;
-        }
-    }
-}
-Config::create($env);
 
 // Common Settings
 if (Config::get('app_debug') === true) {
