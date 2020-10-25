@@ -1,6 +1,6 @@
 {
     "name": "korephp/kore-skeleton",
-    "description": "korelibrary skeleton.",
+    "description": "A skeleton for creating applications with Kore.",
     "type": "project",
     "license": "MIT",
     "authors": [
