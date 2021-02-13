@@ -2,9 +2,9 @@
 // Environment independent common settings
 // 
 
-return [
+return array(
     'timezone' => 'Asia/Tokyo'
     , 'encoding' => 'UTF-8'
 
 
-];
+);
