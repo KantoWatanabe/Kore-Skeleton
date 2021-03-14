@@ -10,6 +10,6 @@
         }
     ],
     "require": {
-        "korephp/kore": "^2.3"
+        "korephp/kore": "^2.4"
     }
 }
