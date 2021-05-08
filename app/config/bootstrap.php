@@ -6,15 +6,7 @@ require_once(__DIR__.'/../../vendor/autoload.php');
 // Init Kore
 Kore\bootstrap(__DIR__.'/../../app', 'app');
 
-$env = @$_SERVER['app_env'];
-if (php_sapi_name() === 'cli') {
-    foreach ($argv as $key => $value) {
-        if (preg_match('/^--env=[a-zA-Z0-9]+$/', $value)) {
-            $env = str_replace('--env=', '', $value);
-            break;
-        }
-    }
-}
+$env = isset($_SERVER['APP_ENV']) ? $_SERVER['APP_ENV'] : (isset($_ENV['APP_ENV']) ? $_ENV['APP_ENV'] : '');
 Config::create($env);
 
 // AutoLoad

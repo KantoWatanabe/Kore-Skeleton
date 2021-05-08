@@ -1,5 +1,18 @@
 #!/usr/bin/env php
 <?php
+
+$env = '';
+foreach ($argv as $key => $value) {
+    if (preg_match('/^--env=[a-zA-Z0-9]+$/', $value)) {
+        $env = str_replace('--env=', '', $value);
+        break;
+    }
+}
+
+if ($env) {
+    $_ENV['APP_ENV'] = $env;
+}
+
 require_once(__DIR__.'/../app/config/bootstrap.php');
 
 $app = new Kore\Application();
