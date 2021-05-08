@@ -1,15 +1,16 @@
 <?php
+
 namespace app\controllers;
 
 use Kore\Controller;
 
-class sample extends Controller
+class example extends Controller
 {
     /**
      * {@inheritdoc}
      */
     protected function action()
     {
-        $this->respondView('sample');
+        $this->respondView('example');
     }
 }
