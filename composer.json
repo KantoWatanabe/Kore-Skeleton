@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "korephp/kore": "^2.4"
+        "korephp/kore": "^2.5"
     },
     "scripts": {
         "start": "php -S localhost:8080 -t public"
